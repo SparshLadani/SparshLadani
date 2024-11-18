@@ -3,9 +3,9 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=sparshladani" alt="sparshladani" /></a> </p>
 
-- 🔭 I’m currently working on **Jobizer**
+- 🔭 I’m currently working on **Network Intrusion Detection System (NIDS)**
 
-- 🌱 I’m currently learning **More about amazon web services for cloud practitioner level**
+- 🌱 I’m currently learning **More about amazon web services for cloud practitioner level and preparing for CompTIA Security+ exam**
 
 - 👨‍💻 All of my projects are available at [https://sparsh-ladani-portfolio-website.netlify.app/](https://sparsh-ladani-portfolio-website.netlify.app/)
 
