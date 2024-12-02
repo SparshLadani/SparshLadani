@@ -1,8 +1,6 @@
 <h1 align="center">Hi 👋, I'm Sparsh Ladani</h1>
 <h3 align="center">A passionate Software Engineering and Cybersecurity enthusiast</h3>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=sparshladani" alt="sparshladani" /></a> </p>
-
 - 🔭 I’m currently working on **Network Intrusion Detection System (NIDS)**
 
 - 🌱 I’m currently learning **More about amazon web services for cloud practitioner level and preparing for CompTIA Security+ exam**
