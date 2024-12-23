@@ -1,5 +1,5 @@
 <h1 align="center">Hi 👋, I'm Sparsh Ladani</h1>
-<h3 align="center">A passionate Software Engineering and Cybersecurity enthusiast</h3>
+<h3 align="center">A Cybersecurity enthusiast</h3>
 
 - 🔭 I’m currently working on **Network Intrusion Detection System (NIDS)**
 
