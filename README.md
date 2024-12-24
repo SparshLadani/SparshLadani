@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working on **Network Intrusion Detection System (NIDS)**
 
-- 🌱 I’m currently preparing for the AWS CLP, CompTIA Security+, and eJPT certifications.**
+- 🌱 I’m currently preparing for the **AWS CLP, CompTIA Security+, and eJPT certifications.**
 
 - 👨‍💻 All of my projects are available at [https://sparsh-ladani-portfolio-website.netlify.app/](https://sparsh-ladani-portfolio-website.netlify.app/)
 
