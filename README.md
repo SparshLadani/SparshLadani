@@ -3,7 +3,7 @@
 
 - 🔭 I’m currently working on **Network Intrusion Detection System (NIDS)**
 
-- 🌱 I’m currently learning **More about amazon web services for cloud practitioner level and preparing for CompTIA Security+ exam**
+- 🌱 I’m currently learning **More about amazon web services for cloud practitioner level and preparing for CompTIA Security+ and eJPT certificates**
 
 - 👨‍💻 All of my projects are available at [https://sparsh-ladani-portfolio-website.netlify.app/](https://sparsh-ladani-portfolio-website.netlify.app/)
 
