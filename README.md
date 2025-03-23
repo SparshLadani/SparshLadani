@@ -5,7 +5,7 @@
 
 - 👨‍💻 All of my projects are available at [https://sparsh-ladani-portfolio-website.netlify.app/](https://sparsh-ladani-portfolio-website.netlify.app/)
 
-- 💬 Ask me about **Information Secuirty, Python, Java (Data Structures and Algorithms), Full Stack Web Development**
+- 💬 Ask me about **Information Security, Python, Java (Data Structures and Algorithms), Full Stack Web Development**
 
 - 📫 How to reach me **sparshladani@dal.ca**
 
