@@ -1,7 +1,7 @@
 <h1 align="center">Hi 👋, I'm Sparsh Ladani</h1>
 <h3 align="center">A Cybersecurity enthusiast</h3>
 
-- 🌱 I am certified with **ISC2 CC** and currently preparing for **AWS Cloud Security Speciality and eJPT certifications.**
+- 🌱 I am certified with **ISC2 CC** and currently preparing for **Microsoft Security Operations Analyst(SC-200) and eJPT certifications.**
 
 - 👨‍💻 All of my projects are available at [https://sparsh-ladani-portfolio-website.netlify.app/](https://sparsh-ladani-portfolio-website.netlify.app/)
 
