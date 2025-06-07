@@ -10,7 +10,6 @@
 - 📫 How to reach me **sparshladani@dal.ca**
 
 - 📄 Know about my experiences [https://sparsh-ladani-portfolio-website.netlify.app/](https://sparsh-ladani-portfolio-website.netlify.app/)
-- [![Hits](https://u8views.com/api/v1/github/profiles/63663261/views/day-week-month-total-count.svg)](https://u8views.com/github/SparshLadani)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
