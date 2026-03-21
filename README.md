@@ -1,9 +1,7 @@
 <h1 align="center">Hi 👋, I'm Sparsh Ladani</h1>
 <h3 align="center">A Cybersecurity enthusiast</h3>
 
-- 🌱 I am certified with **ISC2 CC and Microsoft Azure Fundamentals** and currently preparing for **Security+ and eJPT.**
-
-- 👨‍💻 All of my projects are available at [https://sparsh-ladani-portfolio-website.netlify.app/](https://sparsh-ladani-portfolio-website.netlify.app/)
+- 🌱 I am certified with **ISC2 CC, Microsoft Azure Fundamentals and CompTIA Security+**
 
 - 💬 Ask me about **Information Security, Python, Java (Data Structures and Algorithms), Full Stack Web Development**
 
