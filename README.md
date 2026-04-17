@@ -1,24 +1,39 @@
-<h1 align="center">Hi 👋, I'm Sparsh Ladani</h1>
-<h3 align="center">A Cybersecurity enthusiast</h3>
+# Hi there! 👋
 
-- 🌱 I am certified with **ISC2 CC, Microsoft Azure Fundamentals and CompTIA Security+**
+## 👨‍💻 Intro
+I'm Sparsh Ladani. Final-year CS student at Dalhousie, concentrating in Cybersecurity, graduating August 2026. Currently interning as a Cybersecurity Intern at Thales.
 
-- 💬 Ask me about **Information Security, Python, Java (Data Structures and Algorithms), Full Stack Web Development**
+## 💼 Projects
 
-- 📫 How to reach me **sparshladani@dal.ca**
+### 1. Autonomous AI Threat Hunting Agent
+An agent built on LangGraph and the OpenAI API that pulls from Elastic SIEM, detects APT29-style activity, and spits out a SOC-ready MITRE ATT&CK report in under a minute. The fun part was getting the agent to reason over alerts instead of just summarizing them.
 
-- 📄 Know about my experiences [https://sparsh-ladani-portfolio-website.netlify.app/](https://sparsh-ladani-portfolio-website.netlify.app/)
+### 2. Serverless AWS CloudTrail Threat Detection Pipeline
+A fully serverless setup on AWS that monitors CloudTrail logs and flags suspicious API activity. No servers to babysit, which was kind of the point.
 
-<h3 align="left">Connect with me:</h3>
-<p align="left">
-<a href="https://linkedin.com/in/sparshladani" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="sparsh ladani" height="30" width="40" /></a>
-<a href="https://instagram.com/sparshladani" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="sparshladani" height="30" width="40" /></a>
-<a href="https://www.leetcode.com/sparshladani" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="sparshladani" height="30" width="40" /></a>
-</p>
+### 3. WannaCry Ransomware Homelab Analysis
+I detonated WannaCry in an isolated homelab and dug into it with Autopsy, Volatility, and KQL. The writeup walks through the infection chain, what it touches on disk and in memory, and what you'd actually do to contain it.
 
-<h3 align="left">Languages and Tools:</h3>
-<p align="left"> <a href="https://developer.android.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> </a> <a href="https://aws.amazon.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://getbootstrap.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/bootstrap/bootstrap-plain-wordmark.svg" alt="bootstrap" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cpp/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/cplusplus/cplusplus-original.svg" alt="cplusplus" width="40" height="40"/> </a> <a href="https://www.w3schools.com/cs/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/csharp/csharp-original.svg" alt="csharp" width="40" height="40"/> </a> <a href="https://www.w3schools.com/css/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" alt="css3" width="40" height="40"/> </a> <a href="https://www.djangoproject.com/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/django.svg" alt="django" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://expressjs.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg" alt="express" width="40" height="40"/> </a> <a href="https://firebase.google.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg" alt="firebase" width="40" height="40"/> </a> <a href="https://flask.palletsprojects.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/pocoo_flask/pocoo_flask-icon.svg" alt="flask" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://heroku.com" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/heroku/heroku-icon.svg" alt="heroku" width="40" height="40"/> </a> <a href="https://www.w3.org/html/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="40" height="40"/> </a> <a href="https://www.java.com" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/java/java-original.svg" alt="java" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.mongodb.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg" alt="mongodb" width="40" height="40"/> </a> <a href="https://www.mysql.com/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/mysql/mysql-original-wordmark.svg" alt="mysql" width="40" height="40"/> </a> <a href="https://nextjs.org/" target="_blank" rel="noreferrer"> <img src="https://cdn.worldvectorlogo.com/logos/nextjs-2.svg" alt="nextjs" width="40" height="40"/> </a> <a href="https://nodejs.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" alt="nodejs" width="40" height="40"/> </a> <a href="https://opencv.org/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/opencv/opencv-icon.svg" alt="opencv" width="40" height="40"/> </a> <a href="https://www.php.net" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/php/php-original.svg" alt="php" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> <a href="https://reactjs.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/react/react-original-wordmark.svg" alt="react" width="40" height="40"/> </a> <a href="https://redux.js.org" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" alt="redux" width="40" height="40"/> </a> <a href="https://www.selenium.dev" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/detain/svg-logos/780f25886640cef088af994181646db2f6b1a3f8/svg/selenium-logo.svg" alt="selenium" width="40" height="40"/> </a> <a href="https://tailwindcss.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/tailwindcss/tailwindcss-icon.svg" alt="tailwind" width="40" height="40"/> </a> <a href="https://www.typescriptlang.org/" target="_blank" rel="noreferrer"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/typescript/typescript-original.svg" alt="typescript" width="40" height="40"/> </a> <a href="https://unity.com/" target="_blank" rel="noreferrer"> <img src="https://www.vectorlogo.zone/logos/unity3d/unity3d-icon.svg" alt="unity" width="40" height="40"/> </a> </p>
+## 🚀 Core Skills
+Elastic SIEM, KQL, MITRE ATT&CK, NIST SP 800-61, Python, LangGraph, AWS Security, Active Directory, Suricata, Nessus, Burp Suite, Wireshark, Autopsy, Volatility.
 
-<p><img align="center" src="https://github-readme-stats.vercel.app/api/top-langs?username=sparshladani&show_icons=true&locale=en&layout=compact" alt="sparshladani" /></p>
+## 🔒 Certifications
+CompTIA Security+, Microsoft Azure Fundamentals (AZ-900), ISC2 CC.
 
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=sparshladani&" alt="sparshladani" /></p>
+## 🌟 Achievements
+- Top 2% on TryHackMe (out of 3M+ users)
+- 15+ infosec blogs on Medium, 32K+ total views
+
+## 🌀 Focus
+I spend most of my time on threat hunting, detection engineering, and the security side of AI systems. The AI + security overlap is where I want to keep working and growing!
+
+## 📫 Let's Connect
+If you want to talk detections, CTFs, or AI security, ping me on [LinkedIn](https://www.linkedin.com/in/sparshladani/).
+
+## 🔥 Stay curious, stay secure.
+
+---
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=SparshLadani)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SparshLadani)
+[![trophy](https://github-profile-trophy.vercel.app/?username=SparshLadani)](https://github.com/SparshLadani)
+[![GitHub Streak](https://streak-stats.demolab.com/?user=SparshLadani)](https://git.io/streak-stats)
