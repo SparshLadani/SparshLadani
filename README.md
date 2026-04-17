@@ -35,5 +35,4 @@ If you want to talk detections, CTFs, or AI security, ping me on [LinkedIn](http
 ---
 ![GitHub Stats](https://github-readme-stats.vercel.app/api?username=SparshLadani)
 ![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SparshLadani)
-[![trophy](https://github-profile-trophy.vercel.app/?username=SparshLadani)](https://github.com/SparshLadani)
 [![GitHub Streak](https://streak-stats.demolab.com/?user=SparshLadani)](https://git.io/streak-stats)
