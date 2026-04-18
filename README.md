@@ -15,7 +15,7 @@ A fully serverless setup on AWS that monitors CloudTrail logs and flags suspicio
 I detonated WannaCry in an isolated homelab and dug into it with Autopsy, Volatility, and KQL. The writeup walks through the infection chain, what it touches on disk and in memory, and what you'd actually do to contain it.
 
 ## 🚀 Core Skills
-Elastic SIEM, KQL, MITRE ATT&CK,Lockheed Martin Cyber Kill Chain, NIST SP 800-61, Python, LangGraph, AWS Security, Active Directory, Suricata, Nessus, Burp Suite, Wireshark, Autopsy, Volatility.
+Elastic SIEM, KQL, MITRE ATT&CK, Lockheed Martin Cyber Kill Chain, NIST SP 800-61, Python, LangGraph, AWS Security, Active Directory, Suricata, Nessus, Burp Suite, Wireshark, Autopsy, Volatility.
 
 ## 🔒 Certifications
 CompTIA Security+, Microsoft Azure Fundamentals (AZ-900), ISC2 CC.
