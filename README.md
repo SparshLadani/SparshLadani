@@ -29,5 +29,3 @@ I spend most of my time on threat hunting, detection engineering, and the securi
 
 ## 📫 Let's Connect
 If you want to talk detections, CTFs, or AI security, ping me on [LinkedIn](https://www.linkedin.com/in/sparshladani/).
-
-## 🔥 Stay curious, stay secure.
