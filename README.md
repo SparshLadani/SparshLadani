@@ -31,8 +31,3 @@ I spend most of my time on threat hunting, detection engineering, and the securi
 If you want to talk detections, CTFs, or AI security, ping me on [LinkedIn](https://www.linkedin.com/in/sparshladani/).
 
 ## 🔥 Stay curious, stay secure.
-
----
-
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=SparshLadani)
-[![GitHub Streak](https://streak-stats.demolab.com/?user=SparshLadani)](https://git.io/streak-stats)
