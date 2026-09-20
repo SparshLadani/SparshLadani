@@ -241,9 +241,7 @@ attack surface that agents and LLMs introduce.
 
 ### `[ ./connect --request ]`
 
-Actively looking for full-time **AppSec**, **Security Engineering**, or **AI Security** roles.
-
-[![LinkedIn](https://img.shields.io/badge/Let's_talk_security-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sparshladani/)
+[![LinkedIn](https://img.shields.io/badge/Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sparshladani/)
 
 <br>
 
