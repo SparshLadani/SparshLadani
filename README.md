@@ -1,254 +1,337 @@
-<div align="center">
+# 🛡️ Sparsh Ladani
 
-```
-██████╗ ██████╗  ██████╗ ██████╗ ███████╗███████╗ ██████╗
-██╔══██╗██╔══██╗██╔═══██╗██╔══██╗██╔════╝██╔════╝██╔════╝
-██████╔╝██████╔╝██║   ██║██║  ██║███████╗█████╗  ██║     
-██╔═══╝ ██╔══██╗██║   ██║██║  ██║╚════██║██╔══╝  ██║     
-██║     ██║  ██║╚██████╔╝██████╔╝███████║███████╗╚██████╗
-╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝╚══════╝ ╚═════╝   
-```
+**Security Engineer • AppSec • AI Security • Offensive Security**
 
-### `whoami`
+> **BUILD → BREAK → UNDERSTAND → SECURE**
 
-# Sparsh Ladani
-
-**`root@security`:** AppSec &bull; Security Engineering &bull; AI/LLM Security
-
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00FF41&center=true&vCenter=true&width=650&lines=Breaking+things+to+understand+them.;Red-teaming+AI+agents+before+they+ship.;Finding+the+bug+before+the+attacker+does." alt="Typing SVG" />
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-connect-000000?style=for-the-badge&logo=linkedin&logoColor=00FF41&labelColor=0d1117)](https://www.linkedin.com/in/sparshladani/)
-![Status](https://img.shields.io/badge/status-open_to_work-00FF41?style=for-the-badge&labelColor=0d1117)
-
-</div>
-
-<br>
-
-```diff
-+ [INFO] Loading operator profile...
-+ [INFO] Role: Recent CS Graduate, Dalhousie University | Certificate in Cybersecurity
-+ [INFO] Specialization: AppSec / Security Engineering / AI-LLM Security
-+ [INFO] Mission: Find where the guardrails actually break, before someone else does.
-+ [OK]   Profile loaded successfully.
+```text
+┌──────────────────────────────────────────────────────┐
+│                  SECURITY PROFILE                    │
+├──────────────────────────────────────────────────────┤
+│                                                      │
+│  USER       : Sparsh Ladani                          │
+│  ROLE       : Security Engineer                      │
+│  SPECIALTY  : AppSec / AI Security                   │
+│  MODE       : BUILD → BREAK → UNDERSTAND             │
+│                                                      │
+│  CURRENT TARGETS                                      │
+│    ├── AI Agents                                     │
+│    ├── MCP Security                                  │
+│    ├── Web Applications                              │
+│    ├── Cloud Infrastructure                          │
+│    └── Detection Engineering                         │
+│                                                      │
+│  STATUS     : HUNTING FOR ASSUMPTIONS                │
+│                                                      │
+└──────────────────────────────────────────────────────┘
 ```
 
----
+## 👋 About Me
 
-## `>_` About This Operator
+I'm a Computer Science graduate from Dalhousie University with a Certificate in Cybersecurity.
 
-```python
-class SparshLadani:
-    def __init__(self):
-        self.role          = "Security Engineer / AppSec"
-        self.education     = "B.CompSci + Certificate in Cybersecurity @ Dalhousie University"
-        self.focus         = ["AppSec", "Security Engineering", "AI/LLM Security"]
-        self.philosophy    = "Build it. Break it. Document exactly how it broke."
+I build and break software systems, with a particular interest in **Application Security, AI/LLM Security, offensive security, and cloud security**.
 
-    def daily_loop(self):
-        while True:
-            self.recon()          # find the attack surface
-            self.exploit()        # prove the risk is real, not theoretical
-            self.report()         # write it up so someone can actually fix it
-            yield "repeat"
-
-    def whoami(self):
-        return "I like building things that test where the guardrails actually break."
-```
-
-<br>
-
-## `[ ./scan_targets.sh ]` &mdash; Projects
-
-<table>
-<tr>
-<td width="50%" valign="top">
-
-### 🤖 AI Security
-
-<details open>
-<summary><b>🕸️ MCP Server Red-Teaming</b></summary>
-<br>
-
-![](https://img.shields.io/badge/target-MCP_Server-red?style=flat-square&labelColor=0d1117)
-![](https://img.shields.io/badge/vulns_found-5-critical?style=flat-square&labelColor=0d1117&color=ff0055)
-
-Built a deliberately vulnerable MCP server, red-teamed it with Claude Code as the attacking agent. Uncovered **path traversal**, **unauthenticated credential access**, and a **tool-chaining exfiltration flaw** where the agent leaked a secret it had initially refused to hand over. Full threat model delivered — assets, trust boundaries, mitigations.
-
-`Python` `MCP` `AI Red-Teaming` `Threat Modeling`
-
-[**→ inspect_repo**](https://github.com/SparshLadani/MCP-Agent-Red-Team-Lab)
-
-</details>
-
-<details open>
-<summary><b>🎯 Autonomous Threat Hunting Agent</b></summary>
-<br>
-
-![](https://img.shields.io/badge/runtime-%3C60s-00FF41?style=flat-square&labelColor=0d1117)
-
-An agent on **LangGraph + GPT-4o-mini** that pulls from Elastic SIEM, detects APT-level behavior mapped to **MITRE ATT&CK**, and produces a SOC-ready report in under a minute. The hard part: getting it to *reason* over alerts instead of just summarizing them.
-
-`LangGraph` `OpenAI API` `Elastic SIEM` `MITRE ATT&CK`
-
-[**→ inspect_repo**](https://github.com/SparshLadani/Threat-Hunting-AI-Agent)
-
-</details>
-
-<details open>
-<summary><b>🧪 Prompt Injection Detection Platform</b></summary>
-<br>
-
-![](https://img.shields.io/badge/cloud-AWS-FF9900?style=flat-square&labelColor=0d1117)
-
-Cloud-native platform on AWS that classifies prompt injection attacks against **MITRE ATLAS** categories.
-
-`AWS` `MITRE ATLAS` `Cloud-Native`
-
-[**→ inspect_repo**](https://github.com/SparshLadani/Prompt-Injection-Detection-Platform)
-
-</details>
-
-</td>
-<td width="50%" valign="top">
-
-### 🛡️ AppSec & Security Engineering
-
-<details open>
-<summary><b>🔍 Secure Code Review &mdash; Expense Platform</b></summary>
-<br>
-
-![](https://img.shields.io/badge/stack-Flask_/_PostgreSQL-333?style=flat-square&labelColor=0d1117)
-![](https://img.shields.io/badge/findings-IDOR_·_JWT_·_Mass_Assignment-ff0055?style=flat-square&labelColor=0d1117)
-
-Manually audited authentication, authorization, and business logic. Identified an **IDOR**, a **JWT role-trust flaw**, and a **mass assignment vulnerability** — documented as PR-ready remediation reports.
-
-`Manual Code Review` `Flask` `PostgreSQL` `OWASP`
-
-[**→ inspect_repo**](https://github.com/SparshLadani/expense-guard)
-
-</details>
-
-<details open>
-<summary><b>☁️ CloudTrail Threat Detection Pipeline</b></summary>
-<br>
-
-![](https://img.shields.io/badge/architecture-serverless-00FF41?style=flat-square&labelColor=0d1117)
-
-Fully serverless AWS pipeline that monitors CloudTrail logs and flags suspicious API activity. No servers to babysit — which was kind of the point.
-
-`AWS Lambda` `CloudTrail` `Serverless`
-
-[**→ inspect_repo**](https://github.com/SparshLadani/AWS-CloudTrail-Threat-Detection-Alerting-System)
-
-</details>
-
-<details open>
-<summary><b>🦠 WannaCry Ransomware Homelab Analysis</b></summary>
-<br>
-
-![](https://img.shields.io/badge/env-isolated_homelab-red?style=flat-square&labelColor=0d1117)
-
-Detonated WannaCry in an isolated homelab. Static + dynamic analysis, IoC extraction, behavior mapped to **MITRE ATT&CK**. Also ran an adversary TTP emulation lab with **Atomic Red Team**, mapped to the Cyber Kill Chain.
-
-`Malware Analysis` `DFIR` `Atomic Red Team`
-
-[**→ read_writeup**](https://medium.com/bugbountywriteup/wannacry-ransomware-a-dfir-soc-monitoring-lab-walkthrough-9001f61a71e9)
-
-</details>
-
-</td>
-</tr>
-</table>
-
----
-
-## `[ ./cat experience.log ]`
-
-```yaml
-role:      Cybersecurity Intern
-org:       Thales
-scope:
-  - penetration testing
-  - secure code review
-  - network security architecture
-  - security monitoring
+```text
+Build → Attack → Investigate → Understand → Fix → Repeat
 ```
 
 ---
 
-## `[ ./arsenal --list ]`
+# 🤖 AI Security Lab
 
-<div align="center">
+## 01. MCP Agent Red-Team Lab
 
-**Languages & Core**
+A deliberately vulnerable Model Context Protocol (MCP) server designed to study security risks introduced when AI agents interact with tools, credentials, databases, and external systems.
 
-![Python](https://img.shields.io/badge/Python-000000?style=for-the-badge&logo=python&logoColor=00FF41)
-![KQL](https://img.shields.io/badge/KQL-000000?style=for-the-badge&logo=microsoftazure&logoColor=00FF41)
+```text
+Vulnerable MCP Server
+        ↓
+AI Agent Red Teaming
+        ↓
+Trust Boundary Analysis
+        ↓
+Tool Chaining
+        ↓
+Data Exfiltration
+        ↓
+Threat Model + Mitigations
+```
 
-**AI / Agent Security**
+Explored vulnerability classes including:
 
-![LangGraph](https://img.shields.io/badge/LangGraph-000000?style=for-the-badge&logoColor=00FF41)
-![OpenAI](https://img.shields.io/badge/OpenAI_API-000000?style=for-the-badge&logo=openai&logoColor=00FF41)
+- Path traversal
+- Unauthenticated credential access
+- SQL injection
+- Tool misuse
+- Cross-tool privilege escalation
+- Tool-chaining data exfiltration
 
-**Detection & Threat Intel**
-
-![Elastic](https://img.shields.io/badge/Elastic_SIEM-000000?style=for-the-badge&logo=elastic&logoColor=00FF41)
-![QRadar](https://img.shields.io/badge/IBM_QRadar-000000?style=for-the-badge&logo=ibm&logoColor=00FF41)
-![MITRE](https://img.shields.io/badge/MITRE_ATT%26CK-000000?style=for-the-badge&logoColor=00FF41)
-
-**Offensive Security Tooling**
-
-![Nmap](https://img.shields.io/badge/Nmap-000000?style=for-the-badge&logo=nmap&logoColor=00FF41)
-![Wireshark](https://img.shields.io/badge/Wireshark-000000?style=for-the-badge&logo=wireshark&logoColor=00FF41)
-![Burp](https://img.shields.io/badge/Burp_Suite-000000?style=for-the-badge&logoColor=00FF41)
-![OWASP](https://img.shields.io/badge/OWASP_ZAP-000000?style=for-the-badge&logo=owasp&logoColor=00FF41)
-![Nessus](https://img.shields.io/badge/Nessus-000000?style=for-the-badge&logoColor=00FF41)
-
-**Cloud & Infra**
-
-![AWS](https://img.shields.io/badge/AWS_Security-000000?style=for-the-badge&logo=amazonaws&logoColor=00FF41)
-![Docker](https://img.shields.io/badge/Docker-000000?style=for-the-badge&logo=docker&logoColor=00FF41)
-
-</div>
+**Focus:** AI agent security, MCP security, trust boundaries, authorization, and tool abuse.
 
 ---
 
-## `[ ./decrypt certifications.enc ]`
+## 02. Threat Hunting AI Agent
 
-<div align="center">
+An AI-assisted threat hunting system built with **LangGraph, OpenAI GPT-4o-mini, and Elastic**.
 
-| 🔐 Certification | Issuer |
-|:---|:---:|
-| **CompTIA Security+** | CompTIA |
-| **Microsoft Azure Fundamentals (AZ-900)** | Microsoft |
-| **ISC2 Certified in Cybersecurity (CC)** | ISC2 |
+The agent uses a multi-step workflow to:
 
-</div>
+- Fetch security telemetry
+- Classify suspicious activity
+- Evaluate confidence
+- Branch reasoning based on findings
+- Generate a structured SOC investigation report
 
----
+Reduced a manual threat-hunting workflow from approximately **5–11 hours to under 60 seconds**.
 
-## `[ ./cat focus.txt ]`
-
-```
-I like working at the intersection of AppSec and AI system security —
-where traditional secure-code-review discipline meets the new
-attack surface that agents and LLMs introduce.
-```
+**Focus:** AI-assisted detection engineering, threat hunting, MITRE ATT&CK, SIEM automation.
 
 ---
 
-<div align="center">
+## 03. Prompt Injection Detection Platform
 
-### `[ ./connect --request ]`
+A cloud-native security platform for detecting and analyzing prompt injection activity.
 
-[![LinkedIn](https://img.shields.io/badge/Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/sparshladani/)
+**Stack:**
 
-<br>
+`AWS API Gateway` • `Lambda` • `DynamoDB` • `S3` • `CloudWatch` • `Terraform`
 
-```diff
-+ [OK] Connection request sent. Awaiting handshake...
+Highlights:
+
+- 69 security events tested
+- ~295 ms p95 latency
+- Dual-write persistence
+- DynamoDB point-in-time recovery
+- IAM least privilege
+- Encryption at rest and in transit
+- MITRE ATLAS-aligned detection concepts
+
+**Focus:** LLM security, prompt injection, cloud security, secure architecture.
+
+---
+
+# 🛡️ AppSec & Offensive Security
+
+## 04. Expense Guard
+
+A deliberately vulnerable Flask/PostgreSQL application used as an Application Security lab.
+
+Performed secure code review and identified vulnerabilities including:
+
+- IDOR
+- JWT role-trust flaws
+- Mass assignment
+- Authorization weaknesses
+- Business-logic issues
+
+Each finding includes technical analysis, impact, remediation guidance, and security reasoning.
+
+**Focus:** OWASP, secure code review, authorization, web application security.
+
+---
+
+## 05. AWS CloudTrail Threat Detection
+
+A serverless AWS threat detection pipeline using:
+
+`CloudTrail → S3 → Lambda → DynamoDB → SNS`
+
+Built Python-based detections for suspicious AWS activity while applying:
+
+- Least-privilege IAM
+- Encryption
+- Event-driven processing
+- Automated alerting
+
+**Focus:** Cloud security, detection engineering, AWS security.
+
+---
+
+## 06. WannaCry DFIR Lab
+
+A defensive security lab combining malware analysis, digital forensics, and threat detection.
+
+Worked with:
+
+- Elastic
+- Sysmon
+- KQL
+- Volatility
+- Autopsy
+- Atomic Red Team
+- MITRE ATT&CK
+
+Investigated malicious activity, generated detections, and analyzed forensic artifacts.
+
+**Focus:** DFIR, threat hunting, malware analysis, detection engineering.
+
+---
+
+# 💼 Industry Experience
+
+**Cybersecurity Intern at Thales **
+
+---
+
+# ⚔️ Security Arsenal
+
+### Programming
+
+`Python` `JavaScript` `Java` `SQL` `Bash` `PowerShell`
+
+### Application Security
+
+`OWASP` `Secure Code Review` `Burp Suite` `OWASP ZAP` `REST APIs`
+
+### Offensive Security
+
+`Nmap` `Nessus` `Wireshark` `Web Pentesting` `API Pentesting`
+
+### Detection & Threat Hunting
+
+`Elastic` `IBM QRadar` `KQL` `Sysmon` `MITRE ATT&CK` `Sigma` `YARA`
+
+### AI Security
+
+`LLM Security` `Prompt Injection` `MCP` `AI Agents` `MITRE ATLAS` `LangGraph`
+
+### Cloud & Infrastructure
+
+`AWS` `Azure` `Terraform` `Docker` `CI/CD` `IAM`
+
+---
+
+# 🧠 Security Knowledge
+
+```text
+Application Security
+├── Web & API Security
+├── Secure Code Review
+├── Authentication & Authorization
+├── OWASP
+└── Vulnerability Research
+
+AI Security
+├── Prompt Injection
+├── Agent Security
+├── MCP Security
+├── Tool Abuse
+├── Trust Boundaries
+└── MITRE ATLAS
+
+Detection Engineering
+├── SIEM
+├── Threat Hunting
+├── Detection Logic
+├── MITRE ATT&CK
+├── Log Analysis
+└── Incident Investigation
+
+Cloud Security
+├── AWS
+├── Azure
+├── IAM
+├── Serverless Security
+├── Infrastructure as Code
+└── Cloud Detection
 ```
 
-<img src="https://komarev.com/ghpvc/?username=SparshLadani&color=00FF41&style=for-the-badge&label=INTRUDERS+DETECTED" alt="Profile Views">
+---
 
-</div>
+# 📜 Certifications
+
+- CompTIA Security+
+- Microsoft Azure Fundamentals (AZ-900)
+- ISC2 Certified in Cybersecurity (CC)
+
+---
+
+# 🏆 Highlights
+
+- Dean's List
+- Top 7% on LeetCode
+- Top 2% on TryHackMe
+- Top 12% CTF@CIT
+- Top 17% HTB Holmes
+- 15+ cybersecurity writeups
+- 32K+ views across security content
+
+---
+
+# 🔭 Current Rabbit Holes
+
+```text
+→ AI Agent Security
+→ MCP Security
+→ Application Security
+→ Offensive Security
+→ Cloud Security
+→ Detection Engineering
+→ Secure AI Infrastructure
+```
+
+---
+
+# 💭 Quote of the Day
+
+<!-- QUOTE_START -->
+
+> *"The impediment to action advances action. What stands in the way becomes the way."*
+>
+> — Marcus Aurelius
+
+<!-- QUOTE_END -->
+
+*Updated automatically every day.*
+
+---
+
+# 📊 GitHub Activity
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=SparshLadani&show_icons=true&hide_border=true&rank_icon=github" alt="Sparsh's GitHub stats" />
+</p>
+
+---
+
+# 🧩 Security Philosophy
+
+> **Don't just learn how systems work. Learn how they fail.**
+
+I like understanding systems from both sides:
+
+```text
+How was it built?
+        ↓
+What assumptions does it make?
+        ↓
+How can those assumptions fail?
+        ↓
+How can the failure be detected?
+        ↓
+How should the system be redesigned?
+```
+
+---
+
+# 📫 Connect
+
+**LinkedIn:** [linkedin.com/in/sparshladani](https://linkedin.com/in/sparshladani)
+
+**GitHub:** [github.com/SparshLadani](https://github.com/SparshLadani)
+
+**Email:** sparshladani@dal.ca
+
+---
+
+```text
+┌───────────────────────────────────────────────┐
+│                                               │
+│       BUILD SOMETHING.                        │
+│       BREAK SOMETHING.                        │
+│       UNDERSTAND WHY.                         │
+│       MAKE IT BETTER.                         │
+│                                               │
+└───────────────────────────────────────────────┘
+```
