@@ -170,7 +170,7 @@ Investigated malicious activity, generated detections, and analyzed forensic art
 
 # 💼 Industry Experience
 
-**Cybersecurity Intern at Thales **
+### Cybersecurity Intern at Thales
 
 ---
 
