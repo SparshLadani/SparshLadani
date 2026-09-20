@@ -278,16 +278,6 @@ Cloud Security
 
 *Updated automatically every day.*
 
----
-
-# 📊 GitHub Activity
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=SparshLadani&show_icons=true&hide_border=true&rank_icon=github" alt="Sparsh's GitHub stats" />
-</p>
-
----
-
 # 🧩 Security Philosophy
 
 > **Don't just learn how systems work. Learn how they fail.**
