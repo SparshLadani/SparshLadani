@@ -1,0 +1,128 @@
+name: Daily Quote
+
+on:
+  schedule:
+    - cron: "15 8 * * *"
+      timezone: "America/Halifax"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-quote:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Update quote
+        run: |
+          python <<'PY'
+          from pathlib import Path
+          from datetime import date
+
+          quotes = [
+              (
+                  "The impediment to action advances action. What stands in the way becomes the way.",
+                  "Marcus Aurelius"
+              ),
+              (
+                  "We suffer more often in imagination than in reality.",
+                  "Seneca"
+              ),
+              (
+                  "No man is free who is not master of himself.",
+                  "Epictetus"
+              ),
+              (
+                  "The only way out is through.",
+                  "Robert Frost"
+              ),
+              (
+                  "Knowing yourself is the beginning of all wisdom.",
+                  "Aristotle"
+              ),
+              (
+                  "You have power over your mind, not outside events.",
+                  "Marcus Aurelius"
+              ),
+              (
+                  "The secret of getting ahead is getting started.",
+                  "Mark Twain"
+              ),
+              (
+                  "Great things are done by a series of small things brought together.",
+                  "Vincent van Gogh"
+              ),
+              (
+                  "He who conquers himself is the mightiest warrior.",
+                  "Confucius"
+              ),
+              (
+                  "The future depends on what you do today.",
+                  "Mahatma Gandhi"
+              ),
+              (
+                  "Waste no more time arguing about what a good man should be. Be one.",
+                  "Marcus Aurelius"
+              ),
+              (
+                  "It always seems impossible until it's done.",
+                  "Nelson Mandela"
+              ),
+              (
+                  "Do what you can, with what you have, where you are.",
+                  "Theodore Roosevelt"
+              ),
+              (
+                  "Success is the sum of small efforts, repeated day in and day out.",
+                  "Robert Collier"
+              ),
+          ]
+
+          today = date.today()
+          quote, author = quotes[today.toordinal() % len(quotes)]
+
+          path = Path("README.md")
+          text = path.read_text(encoding="utf-8")
+
+          start = "<!-- QUOTE_START -->"
+          end = "<!-- QUOTE_END -->"
+
+          if start not in text or end not in text:
+              raise SystemExit(
+                  "Quote markers were not found in README.md"
+              )
+
+          replacement = (
+              f"{start}\n\n"
+              f'> *"{quote}"*\n'
+              f">\n"
+              f"> — {author}\n\n"
+              f"{end}"
+          )
+
+          before, rest = text.split(start, 1)
+          _, after = rest.split(end, 1)
+
+          path.write_text(
+              before + replacement + after,
+              encoding="utf-8"
+          )
+          PY
+
+      - name: Commit quote
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add README.md
+
+          if git diff --cached --quiet; then
+            echo "No changes to commit"
+          else
+            git commit -m "chore: update daily quote"
+            git push
+          fi
