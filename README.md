@@ -248,7 +248,7 @@ Cloud Security
 
 - Dean's List
 - Top 2% on TryHackMe
-- Top 7% on LeetCode
+- Top 10% on LeetCode
 - Top 12% CTF@CIT
 - Top 17% HTB Holmes
 - 20 cybersecurity writeups
