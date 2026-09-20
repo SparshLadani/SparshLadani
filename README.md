@@ -302,10 +302,6 @@ How should the system be redesigned?
 
 **LinkedIn:** [linkedin.com/in/sparshladani](https://linkedin.com/in/sparshladani)
 
-**GitHub:** [github.com/SparshLadani](https://github.com/SparshLadani)
-
-**Email:** sparshladani@dal.ca
-
 ---
 
 ```text
