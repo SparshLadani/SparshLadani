@@ -1,6 +1,6 @@
 # 🛡️ Sparsh Ladani
 
-**Security Engineer • AppSec • AI Security • Offensive Security**
+**Security Engineer • Product Security • AppSec • AI Security**
 
 > **BUILD → BREAK → UNDERSTAND → SECURE**
 
@@ -259,15 +259,13 @@ Cloud Security
 
 ---
 
-# 🔭 Current Rabbit Holes
+# 🔭 Current Focus
 
 ```text
-→ AI Agent Security
-→ MCP Security
+→ Product Security Engineering
+→ Security Engineering
 → Application Security
-→ Offensive Security
-→ Cloud Security
-→ Detection Engineering
+→ AI / LLM Security
 → Secure AI Infrastructure
 ```
 
