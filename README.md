@@ -14,15 +14,12 @@
 │  SPECIALTY  : AppSec / AI Security                   │
 │  MODE       : BUILD → BREAK → UNDERSTAND             │
 │                                                      │
-│  CURRENT TARGETS                                      │
-│    ├── AI Agents                                     │
-│    ├── MCP Security                                  │
-│    ├── Web Applications                              │
-│    ├── Cloud Infrastructure                          │
-│    └── Detection Engineering                         │
-│                                                      │
-│  STATUS     : HUNTING FOR ASSUMPTIONS                │
-│                                                      │
+│  CURRENT TARGETS                                     │
+│    ├── Securing Products & Software Systems          │
+│    ├── Application Security                          │
+│    ├── AI / LLM Security                             │
+│    ├── AI Agent / MCP Security                       │
+│    └── Security Engineering                          │
 └──────────────────────────────────────────────────────┘
 ```
 
@@ -30,7 +27,7 @@
 
 I'm a Computer Science graduate from Dalhousie University with a Certificate in Cybersecurity.
 
-I build and break software systems, with a particular interest in **Application Security, AI/LLM Security, offensive security, and cloud security**.
+I build and break software systems, with a particular interest in **Application Security, AI/LLM Security, and Security Engineering**.
 
 ```text
 Build → Attack → Investigate → Understand → Fix → Repeat
@@ -250,13 +247,11 @@ Cloud Security
 # 🏆 Highlights
 
 - Dean's List
-- Top 7% on LeetCode
 - Top 2% on TryHackMe
+- Top 7% on LeetCode
 - Top 12% CTF@CIT
 - Top 17% HTB Holmes
-- 15+ cybersecurity writeups
-- 32K+ views across security content
-
+- 20 cybersecurity writeups
 ---
 
 # 🔭 Current Focus
