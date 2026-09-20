@@ -15,7 +15,7 @@
 
 **`root@security`:** AppSec &bull; Security Engineering &bull; AI/LLM Security
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00FF41&center=true&vCenter=true&width=650&lines=Breaking+things+to+understand+them.;Red-teaming+AI+agents+before+they+ship.;Finding+the+bug+before+the+attacker+does.;Currently%3A+applying+for+Security+Engineering+roles." alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&pause=1000&color=00FF41&center=true&vCenter=true&width=650&lines=Breaking+things+to+understand+them.;Red-teaming+AI+agents+before+they+ship.;Finding+the+bug+before+the+attacker+does." alt="Typing SVG" />
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-connect-000000?style=for-the-badge&logo=linkedin&logoColor=00FF41&labelColor=0d1117)](https://www.linkedin.com/in/sparshladani/)
 ![Status](https://img.shields.io/badge/status-open_to_work-00FF41?style=for-the-badge&labelColor=0d1117)
