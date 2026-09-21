@@ -270,9 +270,9 @@ Cloud Security
 
 <!-- QUOTE_START -->
 
-> *"The impediment to action advances action. What stands in the way becomes the way."*
+> *"He who conquers himself is the mightiest warrior."*
 >
-> - Marcus Aurelius
+> — Confucius
 
 <!-- QUOTE_END -->
 
