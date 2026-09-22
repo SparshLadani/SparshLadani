@@ -2,7 +2,7 @@ name: Update Daily Quote
 
 on:
   schedule:
-    # Runs every day at 12:00 UTC
+    # Runs every day at 12:00 HFX time
     - cron: "0 3 * * *"
 
   workflow_dispatch:
