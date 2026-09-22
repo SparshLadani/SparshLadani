@@ -1,8 +1,8 @@
-name: Update Daily Quote
+name: Update Daily Meme
 
 on:
   schedule:
-    # Runs every day at 12:00 HFX time
+    # Every day at 12:00 HFX time
     - cron: "0 3 * * *"
 
   workflow_dispatch:
@@ -11,15 +11,15 @@ permissions:
   contents: write
 
 jobs:
-  update-quote:
+  update-meme:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Fetch random joke
-        id: joke
+      - name: Fetch random meme
+        id: meme
         env:
           HUMOR_API_KEY: ${{ secrets.HUMOR_API_KEY }}
         run: |
@@ -27,54 +27,44 @@ jobs:
 
           response=$(curl -fsSL \
             -H "x-api-key: ${HUMOR_API_KEY}" \
-            "https://api.humorapi.com/jokes/random")
+            "https://api.humorapi.com/memes/random?media-type=image&min-rating=6")
 
-          joke=$(echo "$response" | jq -r '.joke')
+          meme_url=$(echo "$response" | jq -r '.url')
 
-          if [ -z "$joke" ] || [ "$joke" = "null" ]; then
-            echo "Failed to retrieve joke"
+          if [ -z "$meme_url" ] || [ "$meme_url" = "null" ]; then
+            echo "Failed to retrieve meme."
+            echo "$response"
             exit 1
           fi
 
-          {
-            echo "joke<<EOF"
-            echo "$joke"
-            echo "EOF"
-          } >> "$GITHUB_OUTPUT"
+          echo "Meme URL: $meme_url"
+
+          echo "url=$meme_url" >> "$GITHUB_OUTPUT"
 
       - name: Update README
         env:
-          JOKE: ${{ steps.joke.outputs.joke }}
+          MEME_URL: ${{ steps.meme.outputs.url }}
         run: |
           python3 <<'PY'
           import os
           import re
 
           readme_path = "README.md"
+          meme_url = os.environ["MEME_URL"]
 
           with open(readme_path, "r", encoding="utf-8") as f:
               content = f.read()
 
-          joke = os.environ["JOKE"].strip()
+          replacement = f"""<!-- MEME_START -->
 
-          # Escape Markdown-sensitive characters
-          joke = joke.replace("\r\n", "\n").replace("\r", "\n")
+          ![Daily Meme]({meme_url})
 
-          # Format multiline jokes as a Markdown blockquote
-          formatted_joke = "\n".join(
-              f"> *{line}*" if line.strip() else ">"
-              for line in joke.split("\n")
-          )
+          *Powered by Humor API*
 
-          replacement = (
-              "<!-- QUOTE_START -->\n\n"
-              f"{formatted_joke}\n\n"
-              "— Humor API\n\n"
-              "<!-- QUOTE_END -->"
-          )
+          <!-- MEME_END -->"""
 
           pattern = re.compile(
-              r"<!-- QUOTE_START -->.*?<!-- QUOTE_END -->",
+              r"<!-- MEME_START -->.*?<!-- MEME_END -->",
               re.DOTALL
           )
 
@@ -86,7 +76,7 @@ jobs:
 
           if count != 1:
               raise RuntimeError(
-                  "QUOTE_START / QUOTE_END markers not found exactly once."
+                  "MEME_START / MEME_END markers not found exactly once."
               )
 
           with open(readme_path, "w", encoding="utf-8") as f:
@@ -105,5 +95,5 @@ jobs:
             exit 0
           fi
 
-          git commit -m "chore: update daily quote"
+          git commit -m "chore: update daily meme"
           git push
