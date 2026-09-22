@@ -3,7 +3,7 @@ name: Update Daily Quote
 on:
   schedule:
     # Runs every day at 12:00 UTC
-    - cron: "0 12 * * *"
+    - cron: "0 3 * * *"
 
   workflow_dispatch:
 
