@@ -1,9 +1,10 @@
-name: Daily Quote
+name: Update Daily Quote
 
 on:
   schedule:
-    - cron: "15 8 * * *"
-      timezone: "America/Halifax"
+    # Runs every day at 12:00 UTC
+    - cron: "0 12 * * *"
+
   workflow_dispatch:
 
 permissions:
@@ -17,103 +18,82 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Update quote
+      - name: Fetch random joke
+        id: joke
+        env:
+          HUMOR_API_KEY: ${{ secrets.HUMOR_API_KEY }}
         run: |
-          python <<'PY'
-          from pathlib import Path
-          from datetime import date
+          set -e
 
-          quotes = [
-              (
-                  "The impediment to action advances action. What stands in the way becomes the way.",
-                  "Marcus Aurelius"
-              ),
-              (
-                  "We suffer more often in imagination than in reality.",
-                  "Seneca"
-              ),
-              (
-                  "No man is free who is not master of himself.",
-                  "Epictetus"
-              ),
-              (
-                  "The only way out is through.",
-                  "Robert Frost"
-              ),
-              (
-                  "Knowing yourself is the beginning of all wisdom.",
-                  "Aristotle"
-              ),
-              (
-                  "You have power over your mind, not outside events.",
-                  "Marcus Aurelius"
-              ),
-              (
-                  "The secret of getting ahead is getting started.",
-                  "Mark Twain"
-              ),
-              (
-                  "Great things are done by a series of small things brought together.",
-                  "Vincent van Gogh"
-              ),
-              (
-                  "He who conquers himself is the mightiest warrior.",
-                  "Confucius"
-              ),
-              (
-                  "The future depends on what you do today.",
-                  "Mahatma Gandhi"
-              ),
-              (
-                  "Waste no more time arguing about what a good man should be. Be one.",
-                  "Marcus Aurelius"
-              ),
-              (
-                  "It always seems impossible until it's done.",
-                  "Nelson Mandela"
-              ),
-              (
-                  "Do what you can, with what you have, where you are.",
-                  "Theodore Roosevelt"
-              ),
-              (
-                  "Success is the sum of small efforts, repeated day in and day out.",
-                  "Robert Collier"
-              ),
-          ]
+          response=$(curl -fsSL \
+            -H "x-api-key: ${HUMOR_API_KEY}" \
+            "https://api.humorapi.com/jokes/random")
 
-          today = date.today()
-          quote, author = quotes[today.toordinal() % len(quotes)]
+          joke=$(echo "$response" | jq -r '.joke')
 
-          path = Path("README.md")
-          text = path.read_text(encoding="utf-8")
+          if [ -z "$joke" ] || [ "$joke" = "null" ]; then
+            echo "Failed to retrieve joke"
+            exit 1
+          fi
 
-          start = "<!-- QUOTE_START -->"
-          end = "<!-- QUOTE_END -->"
+          {
+            echo "joke<<EOF"
+            echo "$joke"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
 
-          if start not in text or end not in text:
-              raise SystemExit(
-                  "Quote markers were not found in README.md"
-              )
+      - name: Update README
+        env:
+          JOKE: ${{ steps.joke.outputs.joke }}
+        run: |
+          python3 <<'PY'
+          import os
+          import re
+
+          readme_path = "README.md"
+
+          with open(readme_path, "r", encoding="utf-8") as f:
+              content = f.read()
+
+          joke = os.environ["JOKE"].strip()
+
+          # Escape Markdown-sensitive characters
+          joke = joke.replace("\r\n", "\n").replace("\r", "\n")
+
+          # Format multiline jokes as a Markdown blockquote
+          formatted_joke = "\n".join(
+              f"> *{line}*" if line.strip() else ">"
+              for line in joke.split("\n")
+          )
 
           replacement = (
-              f"{start}\n\n"
-              f'> *"{quote}"*\n'
-              f">\n"
-              f"> — {author}\n\n"
-              f"{end}"
+              "<!-- QUOTE_START -->\n\n"
+              f"{formatted_joke}\n\n"
+              "— Humor API\n\n"
+              "<!-- QUOTE_END -->"
           )
 
-          before, rest = text.split(start, 1)
-          _, after = rest.split(end, 1)
-
-          path.write_text(
-              before + replacement + after,
-              encoding="utf-8"
+          pattern = re.compile(
+              r"<!-- QUOTE_START -->.*?<!-- QUOTE_END -->",
+              re.DOTALL
           )
+
+          updated_content, count = pattern.subn(
+              replacement,
+              content,
+              count=1
+          )
+
+          if count != 1:
+              raise RuntimeError(
+                  "QUOTE_START / QUOTE_END markers not found exactly once."
+              )
+
+          with open(readme_path, "w", encoding="utf-8") as f:
+              f.write(updated_content)
           PY
 
-      - name: Commit quote
+      - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -121,8 +101,9 @@ jobs:
           git add README.md
 
           if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "chore: update daily quote"
-            git push
+            echo "No changes to commit."
+            exit 0
           fi
+
+          git commit -m "chore: update daily quote"
+          git push
