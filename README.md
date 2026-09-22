@@ -270,7 +270,7 @@ Cloud Security
 
 <!-- MEME_START -->
 
-![Daily Meme](./blob/main/assets/daily-meme.png)
+![Daily Meme](./assets/daily-meme.jpg)
 
 *Powered by Humor API*
 
