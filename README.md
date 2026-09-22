@@ -248,7 +248,7 @@ Cloud Security
 
 - Dean's List
 - Top 2% on TryHackMe
-- Top 7% on LeetCode
+- Top 10% on LeetCode
 - Top 12% CTF@CIT
 - Top 17% HTB Holmes
 - 20 cybersecurity writeups
@@ -266,15 +266,15 @@ Cloud Security
 
 ---
 
-# 💭 Quote of the Day
+# 😂 Daily Meme
 
-<!-- QUOTE_START -->
+<!-- MEME_START -->
 
-> *"The impediment to action advances action. What stands in the way becomes the way."*
->
-> - Marcus Aurelius
+![Daily Meme](./assets/daily-meme.png)
 
-<!-- QUOTE_END -->
+*Powered by Humor API*
+
+<!-- MEME_END -->
 
 *Updated automatically every day.*
 
@@ -301,10 +301,6 @@ How should the system be redesigned?
 # 📫 Connect
 
 **LinkedIn:** [linkedin.com/in/sparshladani](https://linkedin.com/in/sparshladani)
-
-**GitHub:** [github.com/SparshLadani](https://github.com/SparshLadani)
-
-**Email:** sparshladani@dal.ca
 
 ---
 

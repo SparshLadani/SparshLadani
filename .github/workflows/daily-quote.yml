@@ -1,119 +1,89 @@
-name: Daily Quote
+name: Update Daily Meme
 
 on:
   schedule:
-    - cron: "15 8 * * *"
-      timezone: "America/Halifax"
+    # Every day at 12:00 HFX time
+    - cron: "0 3 * * *"
+
   workflow_dispatch:
 
 permissions:
   contents: write
 
 jobs:
-  update-quote:
+  update-meme:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Update quote
+      - name: Fetch random meme
+        id: meme
+        env:
+          HUMOR_API_KEY: ${{ secrets.HUMOR_API_KEY }}
         run: |
-          python <<'PY'
-          from pathlib import Path
-          from datetime import date
+          set -e
 
-          quotes = [
-              (
-                  "The impediment to action advances action. What stands in the way becomes the way.",
-                  "Marcus Aurelius"
-              ),
-              (
-                  "We suffer more often in imagination than in reality.",
-                  "Seneca"
-              ),
-              (
-                  "No man is free who is not master of himself.",
-                  "Epictetus"
-              ),
-              (
-                  "The only way out is through.",
-                  "Robert Frost"
-              ),
-              (
-                  "Knowing yourself is the beginning of all wisdom.",
-                  "Aristotle"
-              ),
-              (
-                  "You have power over your mind, not outside events.",
-                  "Marcus Aurelius"
-              ),
-              (
-                  "The secret of getting ahead is getting started.",
-                  "Mark Twain"
-              ),
-              (
-                  "Great things are done by a series of small things brought together.",
-                  "Vincent van Gogh"
-              ),
-              (
-                  "He who conquers himself is the mightiest warrior.",
-                  "Confucius"
-              ),
-              (
-                  "The future depends on what you do today.",
-                  "Mahatma Gandhi"
-              ),
-              (
-                  "Waste no more time arguing about what a good man should be. Be one.",
-                  "Marcus Aurelius"
-              ),
-              (
-                  "It always seems impossible until it's done.",
-                  "Nelson Mandela"
-              ),
-              (
-                  "Do what you can, with what you have, where you are.",
-                  "Theodore Roosevelt"
-              ),
-              (
-                  "Success is the sum of small efforts, repeated day in and day out.",
-                  "Robert Collier"
-              ),
-          ]
+          response=$(curl -fsSL \
+            -H "x-api-key: ${HUMOR_API_KEY}" \
+            "https://api.humorapi.com/memes/random?media-type=image&min-rating=6")
 
-          today = date.today()
-          quote, author = quotes[today.toordinal() % len(quotes)]
+          meme_url=$(echo "$response" | jq -r '.url')
 
-          path = Path("README.md")
-          text = path.read_text(encoding="utf-8")
+          if [ -z "$meme_url" ] || [ "$meme_url" = "null" ]; then
+            echo "Failed to retrieve meme."
+            echo "$response"
+            exit 1
+          fi
 
-          start = "<!-- QUOTE_START -->"
-          end = "<!-- QUOTE_END -->"
+          echo "Meme URL: $meme_url"
 
-          if start not in text or end not in text:
-              raise SystemExit(
-                  "Quote markers were not found in README.md"
+          echo "url=$meme_url" >> "$GITHUB_OUTPUT"
+
+      - name: Update README
+        env:
+          MEME_URL: ${{ steps.meme.outputs.url }}
+        run: |
+          python3 <<'PY'
+          import os
+          import re
+
+          readme_path = "README.md"
+          meme_url = os.environ["MEME_URL"]
+
+          with open(readme_path, "r", encoding="utf-8") as f:
+              content = f.read()
+
+          replacement = f"""<!-- MEME_START -->
+
+          ![Daily Meme]({meme_url})
+
+          *Powered by Humor API*
+
+          <!-- MEME_END -->"""
+
+          pattern = re.compile(
+              r"<!-- MEME_START -->.*?<!-- MEME_END -->",
+              re.DOTALL
+          )
+
+          updated_content, count = pattern.subn(
+              replacement,
+              content,
+              count=1
+          )
+
+          if count != 1:
+              raise RuntimeError(
+                  "MEME_START / MEME_END markers not found exactly once."
               )
 
-          replacement = (
-              f"{start}\n\n"
-              f'> *"{quote}"*\n'
-              f">\n"
-              f"> — {author}\n\n"
-              f"{end}"
-          )
-
-          before, rest = text.split(start, 1)
-          _, after = rest.split(end, 1)
-
-          path.write_text(
-              before + replacement + after,
-              encoding="utf-8"
-          )
+          with open(readme_path, "w", encoding="utf-8") as f:
+              f.write(updated_content)
           PY
 
-      - name: Commit quote
+      - name: Commit changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -121,8 +91,9 @@ jobs:
           git add README.md
 
           if git diff --cached --quiet; then
-            echo "No changes to commit"
-          else
-            git commit -m "chore: update daily quote"
-            git push
+            echo "No changes to commit."
+            exit 0
           fi
+
+          git commit -m "chore: update daily meme"
+          git push
