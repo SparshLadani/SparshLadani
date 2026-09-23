@@ -3,7 +3,7 @@ name: Update Daily Meme
 on:
   schedule:
     # Every day at 00:00 HFX time
-    - cron: "0 0 * * *"
+    - cron: "15 0 * * *"
 
   workflow_dispatch:
 
