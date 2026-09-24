@@ -29,7 +29,7 @@ jobs:
 
           response=$(curl -fsSL \
             -H "x-api-key: ${HUMOR_API_KEY}" \
-            "https://api.humorapi.com/memes/search?number=1&keywords=tech")
+            "https://api.humorapi.com/memes/random?keywords=technology")
 
             meme_url=$(echo "$response" | jq -r '.memes[0].url')
           if [ -z "$meme_url" ] || [ "$meme_url" = "null" ]; then
