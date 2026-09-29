@@ -31,7 +31,7 @@ jobs:
             -H "x-api-key: ${HUMOR_API_KEY}" \
             "https://api.humorapi.com/memes/random?keywords=technology")
 
-            meme_url=$(echo "$response" | jq -r '.memes[0].url')
+            meme_url=$(echo "$response" | jq -r '.url')
           if [ -z "$meme_url" ] || [ "$meme_url" = "null" ]; then
             echo "Failed to retrieve meme."
             echo "$response"
