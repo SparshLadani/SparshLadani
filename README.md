@@ -266,7 +266,7 @@ Cloud Security
 
 ---
 
-# 😂 Daily Meme
+# Daily Meme
 
 <!-- MEME_START -->
 
