@@ -266,18 +266,6 @@ Cloud Security
 
 ---
 
-# Daily Meme
-
-<!-- MEME_START -->
-
-![Daily Meme](./assets/daily-meme.jpg)
-
-*Powered by Humor API*
-
-<!-- MEME_END -->
-
-*Updated automatically every day.*
-
 # 🧩 Security Philosophy
 
 > **Don't just learn how systems work. Learn how they fail.**
