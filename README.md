@@ -1,4 +1,4 @@
-# 🛡️ Sparsh Ladani
+# Sparsh Ladani
 
 **Security Engineer • Product Security • AppSec • AI Security**
 
@@ -23,7 +23,7 @@
 └──────────────────────────────────────────────────────┘
 ```
 
-## 👋 About Me
+## About Me
 
 I'm a Computer Science graduate from Dalhousie University with a Certificate in Cybersecurity.
 
@@ -35,7 +35,7 @@ Build → Attack → Investigate → Understand → Fix → Repeat
 
 ---
 
-# 🤖 AI Security Lab
+# AI Security Lab
 
 ## 01. MCP Agent Red-Team Lab
 
@@ -108,7 +108,7 @@ Highlights:
 
 ---
 
-# 🛡️ AppSec & Offensive Security
+# AppSec & Offensive Security
 
 ## 04. Expense Guard
 
@@ -165,13 +165,13 @@ Investigated malicious activity, generated detections, and analyzed forensic art
 
 ---
 
-# 💼 Industry Experience
+# Industry Experience
 
 ### Cybersecurity Intern at Thales
 
 ---
 
-# ⚔️ Security Arsenal
+# Security Arsenal
 
 ### Programming
 
@@ -199,7 +199,7 @@ Investigated malicious activity, generated detections, and analyzed forensic art
 
 ---
 
-# 🧠 Security Knowledge
+# Security Knowledge
 
 ```text
 Application Security
@@ -236,7 +236,7 @@ Cloud Security
 
 ---
 
-# 📜 Certifications
+# Certifications
 
 - CompTIA Security+
 - Microsoft Azure Fundamentals (AZ-900)
@@ -244,7 +244,7 @@ Cloud Security
 
 ---
 
-# 🏆 Highlights
+# Highlights
 
 - Dean's List
 - Top 2% on TryHackMe
@@ -254,7 +254,7 @@ Cloud Security
 - 20 cybersecurity writeups
 ---
 
-# 🔭 Current Focus
+# Current Focus
 
 ```text
 → Product Security Engineering
@@ -266,7 +266,7 @@ Cloud Security
 
 ---
 
-# 🧩 Security Philosophy
+# Security Philosophy
 
 > **Don't just learn how systems work. Learn how they fail.**
 
@@ -286,7 +286,7 @@ How should the system be redesigned?
 
 ---
 
-# 📫 Connect
+# Connect
 
 **LinkedIn:** [linkedin.com/in/sparshladani](https://linkedin.com/in/sparshladani)
 
